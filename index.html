@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CartoDBTest.js</title>
+
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        
+        <!-- include leaflet CSS library -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+        <style>
+            html, body, #map {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+
+        <!-- include jquery library -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <!-- include leaflet library -->
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+        <!-- include cartodb-mini library -->
+        <script src="libs/cartodb-mini.js"></script>
+
+        <!-- include map config -->
+        <script src="data/mapConfig.js"></script>
+
+        <script>
+
+            // Load map config on main div
+            CDB.loadMapConfig("map", mapCfgJson);
+
+        </script>
+    </body>
+</html>
