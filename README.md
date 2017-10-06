@@ -7,8 +7,8 @@ Mini version of [original](https://github.com/CartoDB/cartodb.js) CartoDB javasc
 
 ## Installation
 
-1. Import `libs/cartodb-mini.js`
-2. Write map config in a variable (look at example in `data/mapConfig.js`)
+1. Import [cartodb-mini.js](libs/cartodb-mini.js)
+2. Write map config in a variable (look at example in [mapConfig.js](data/mapConfig.js))
 3. Load the map:
     ```
     CDB.loadMapConfig(divId, mapCfgVar);
@@ -18,7 +18,7 @@ Mini version of [original](https://github.com/CartoDB/cartodb.js) CartoDB javasc
 
 ## Description
 
-The library uses [Leaflet](http://leafletjs.com/) library for tiles rendering and [CartoDB Maps API](https://carto.com/docs/carto-engine/maps-api) for tiles urlTemplate provisioning.
+The library uses [Leaflet](http://leafletjs.com/) library for tiles rendering and [CartoDB Maps API](https://carto.com/docs/carto-engine/maps-api) for layers URLs provisioning.
 It will read map config file looking for map center/zoom attributes, and will set the view in specified container. Then will cycle on layers configuration to produce payload for request to CartoDB Maps API. Finally it will load layers using response (`layergroupid`) from CartoDB Maps API.
 
 ## Checklist
